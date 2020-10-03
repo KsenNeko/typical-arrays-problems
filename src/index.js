@@ -1,34 +1,34 @@
-function min() {
-  if (arguments.length > 0) {
-    let minimum = arguments[0];
-    for (let i = 0; i < arguments.length; i++) {
-      if (minimum > arguments[i]) {
-        minimum = arguments[i];
+function min(arr) {
+  if (arr.length > 0) {
+    let minimum = arr[0];
+    for (let i = 0; i < arr.length; i++) {
+      if (minimum > arr[i]) {
+        minimum = arr[i];
       }
     }
     return minimum;
   } else return 0;
 }
 
-function max() {
-  if (arguments.length > 0) {
-    let maximum = arguments[0];
-    for (let i = 0; i < arguments.length; i++) {
-      if (maximum < arguments[i]) {
-        maximum = arguments[i];
+function max(arr) {
+  if (arr.length > 0) {
+    let maximum = arr[0];
+    for (let i = 0; i < arr.length; i++) {
+      if (maximum < arr[i]) {
+        maximum = arr[i];
       }
     }
     return maximum;
   } else return 0;
 }
 
-function avg() {
-  if (arguments.length > 0) {
+function avg(arr) {
+  if (arr.length > 0) {
     let average = 0;
-    for (let i = 0; i < arguments.length; i++) {
-      average += arguments[i];
+    for (let i = 0; i < arr.length; i++) {
+      average += arr[i];
     }
-    return average / arguments.length;
+    return average / arr.length;
   } else return 0;
 }
 
